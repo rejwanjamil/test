@@ -1,11 +1,11 @@
 import {LOAD_DATA} from '../actions/actionTypes'
 
-const dataReducer = (state=null, { type, payload }) => {
+const dataReducer = (state=[], { type, payload }) => {
     switch(type) {
-        case LOAD_DATA: {
+        case LOAD_DATA:
             return payload
-        }
-        default: return state
+        default:
+            return state
     }
 }
 
